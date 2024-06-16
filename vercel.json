@@ -14,14 +14,25 @@
       }
     ],
     "routes": [
-      {
+        {
+            "src": "/staticfiles/(.*)",
+            "dest": "staticfiles"
+        },
+        {
+            "src": "/static/(.*)",
+            "dest": "static"
+        },
+        {
+            "src": "/staticfiles/(.*)",
+            "dest": "static"
+        },
+        {
+            "src": "/static/(.*)",
+            "dest": "staticfiles"
+        },
+        {
         "src": "/",
         "dest": "mysite/wsgi.py"
-      },
-      {
-        "src": "/static/(.*)",
-        "dest": "staticfiles"
-      }
+        }
     ]
-  }
-  
+}
