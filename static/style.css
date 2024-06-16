@@ -1,0 +1,79 @@
+:root {
+    --colorClick: rgb(17, 93, 255); /* Define the variable with a name and color value */
+    --colorHover:  rgb(9, 62, 177);
+}
+body{
+    background-color:black ;
+    display: grid;
+    justify-items: center;
+    background-color: rgb(208, 212, 216);
+}
+.shape{
+    /* * estilização da forma */
+    margin-top: 40px;
+    border-radius: 7px;
+    width: 600px;
+    height: 430px;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(2, 1fr); /* Divide o espaço em duas colunas iguais */
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.192);
+}
+.lang1,.lang2{
+    display: grid;
+}
+
+#languages1, #languages2{
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    color: grey;
+    border: 1px solid rgb(184, 184, 184);
+    font-size: 17px;
+    margin: 10px 7px 0px 7px;
+}
+.text {
+    height: 300px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    font-size: 17px;
+    margin: -50px 7px 7px 7px;
+}  
+.container { /* Adicione um container para envolver os botões */
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os botões */
+}
+#swap{
+    margin: -55px 5px 7px 7px;
+    width: 125px;
+    height: 45px;
+    padding: 10px 0px 10px 0px;
+    background-color: var(--colorClick);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.traduzir{
+    margin: -55px 7px 7px 5px;
+    width: 450px;
+    height: 45px;
+    background-color: var(--colorClick);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+#swap:hover,.traduzir:hover{
+    background-color: var(--colorHover);
+    cursor: pointer;
+}
+.text:focus{
+    outline: none;
+}
+#languages1:hover, #languages2:hover{
+    cursor: pointer;
+}
+option:hover{
+    cursor: pointer;
+}
