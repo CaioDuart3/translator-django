@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$kojs33&rxe&w^2jo)bucj6pu!qgyz=g3z#@b1(iu%=$t3tl7+
 DEBUG = True
 
 #for runserver, delete the string:
-ALLOWED_HOSTS = ['.vercel.app'] 
+ALLOWED_HOSTS = [] 
 
 
 # Application definition

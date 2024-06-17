@@ -48,11 +48,11 @@ body{
     margin: -55px 5px 7px 7px;
     width: 125px;
     height: 45px;
-    padding: 10px 0px 10px 0px;
     background-color: var(--colorClick);
     border: none;
     border-radius: 5px;
     color: white;
+    font-size: 17px;
 }
 .traduzir{
     margin: -55px 7px 7px 5px;

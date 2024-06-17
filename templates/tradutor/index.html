@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Translator</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>  
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
 </head>
 <body>
             <form action="{% url 'translate'%}" method="POST">
@@ -42,7 +40,7 @@
                     </span>
                 </div>
                 <div class="container">
-                    <button type="submit" name='swap' value="swap"  id="swap"><ion-icon name="swap-horizontal-outline" style='width: 25px; height: 25px;'></ion-icon></button>
+                    <button type="submit" id="swap" name='swap' value="swap">SWAP</button>
                     <button type="submit" class='traduzir' name="translate" value="translate">TRANSLATE</button>
                 </div>
             </form>
